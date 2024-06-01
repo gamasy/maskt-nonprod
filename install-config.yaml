@@ -1,0 +1,100 @@
+additionalTrustBundlePolicy: Proxyonly
+apiVersion: v1
+baseDomain: testad.com
+compute:
+- architecture: amd64
+  hyperthreading: Enabled
+  name: worker
+  platform: 
+   vsphere:
+    cpus: 12
+    coresPerSocket: 2
+    memoryMB: 65546
+    osDisk:
+     diskSizeGB: 200
+  replicas: 3
+controlPlane:
+  architecture: amd64
+  hyperthreading: Enabled
+  name: master
+  platform: 
+   vsphere: 
+    cpus: 6 
+    coresPerSocket: 2
+    memoryMB: 24576
+    osDisk:
+     diskSizeGB: 200
+  replicas: 3
+metadata:
+  creationTimestamp: null
+  name: dct-ocp-01
+networking:
+  clusterNetwork:
+  - cidr: 10.52.0.0/14
+    hostPrefix: 23
+  machineNetwork:
+  - cidr: 172.23.0.0/23
+  networkType: OVNKubernetes
+  serviceNetwork:
+  - 10.61.0.0/16
+platform:
+  vsphere:
+    apiVIPs:
+    - 172.23.0.101
+    failureDomains:
+    - name: generated-failure-domain
+      region: generated-region
+      server: dct-test-vcenter.testad.com
+      topology:
+        computeCluster: /DCT_SEEBHO/host/CORE02
+        datacenter: DCT_SEEBHO
+        datastore: /DCT_SEEBHO/datastore/DCT_CORE_OCP_ESX_DS45
+        networks:
+        - DCT_CORE02_VLAN_1154
+        resourcePool: /DCT_SEEBHO/host/CORE02//Resources
+      zone: generated-zone
+    ingressVIPs:
+    - 172.23.0.102
+    vcenters:
+    - datacenters:
+      - DCT_SEEBHO
+      password: Test#1234
+      port: 443
+      server: dct-test-vcenter.testad.com
+      user: ocpusr@vsphere.local
+publish: External
+imageContentSources:
+- mirrors: 
+  - bastion.dct-ocp-01.testad.com:8443/openshift/release
+  source: quay.io/openshift-release-dev/ocp-v4.0-art-dev
+- mirrors:
+  - bastion.dct-ocp-01.testad.com:8443/openshift/release-images
+  source: quay.io/openshift-release-dev/ocp-release
+additionalTrustBundle: | 
+  -----BEGIN CERTIFICATE-----
+  MIID/jCCAuagAwIBAgIUDInWf3A6JaiiHehS4sRkeUHFiwwwDQYJKoZIhvcNAQEL
+  BQAwdzELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAlZBMREwDwYDVQQHDAhOZXcgWW9y
+  azENMAsGA1UECgwEUXVheTERMA8GA1UECwwIRGl2aXNpb24xJjAkBgNVBAMMHWJh
+  c3Rpb24uZGN0LW9jcC0wMS50ZXN0YWQuY29tMB4XDTI0MDUzMTIxNDQzN1oXDTI3
+  MDMyMTIxNDQzN1owdzELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAlZBMREwDwYDVQQH
+  DAhOZXcgWW9yazENMAsGA1UECgwEUXVheTERMA8GA1UECwwIRGl2aXNpb24xJjAk
+  BgNVBAMMHWJhc3Rpb24uZGN0LW9jcC0wMS50ZXN0YWQuY29tMIIBIjANBgkqhkiG
+  9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtnQmGUIquO6eq6Ba1oUifRSDygRFfnGe9G+e
+  WvpXzz9DqDW7JwHXL65qJGpxTeykqtgVEoZZlis7+t4IBeCfMSD32PBZBKeniLZ9
+  rTWFS4NCZ9Snzc6MPsuupyMLiQ9sB7dB1kyGF1FJ3/gD96H7QRGEmdior3QwLJwf
+  oIP3mIb5OA5Rumwfd9N9hk8yR4OzqAqhtRJMcP5Vzck5st32f7VkI0lYNiZNf0OC
+  tGvbBocSAyKOJ2Olaw/ptk1W6SjkjR3EDwV5YxWZZ2Y+dmb2u3UnppiB4QqniY8+
+  rqRNKbbe7BMwf2hm66Y4dn1htCf0b3i04vxlUIQk39zkhO1y9wIDAQABo4GBMH8w
+  CwYDVR0PBAQDAgLkMBMGA1UdJQQMMAoGCCsGAQUFBwMBMCgGA1UdEQQhMB+CHWJh
+  c3Rpb24uZGN0LW9jcC0wMS50ZXN0YWQuY29tMBIGA1UdEwEB/wQIMAYBAf8CAQEw
+  HQYDVR0OBBYEFJKXEa81EURAUmH2KuRNuYCD3vg7MA0GCSqGSIb3DQEBCwUAA4IB
+  AQC2DHUI1sQ0FX8i78p8GvExiGw3SXK1NvFSwS/903YJeTPXxJsM0xCD48vcwpqz
+  XKF3iLLd4Lo+0LldEL72D5iFP/JTY7xk5GhMIjdc7t2U/WWhupxwXkitLE7xu7bZ
+  HXprHQD1Bwlo93hgjCjasXyR4nLJ1v7VqxtJ9rXVujSlxOQtjrgGEU6V4T1/GcfQ
+  yIWlmWAtMnf2vFQweU3pf+ZEWlgJjwYDLd1/+ohLdsK6UjX6WNdSjYRNv307UDdS
+  eSWRW0scn9/k3Rt45i24bFnqF6wPMkRnqH6i0y/iLtxXZrtyEYOvsUVkH+TVECZB
+  nN41Aur0ROhLsw4331I0jEm7
+  -----END CERTIFICATE-----
+pullSecret: '{"auths":{"bastion.dct-ocp-01.testad.com:8443":{"auth":"aW5pdDpaMERuSjY0MUk4cWFrYnIydjVSN2lVQXVMWDlIM3d5ag==","email":"mginka@bankmuscat.com"},"cloud.openshift.com":{"auth":"b3BlbnNoaWZ0LXJlbGVhc2UtZGV2K29jbV9hY2Nlc3NfYWQ4OWM2OGY0ZGY1NDM4ZWE0YjIxMWMyODQyYjk5ZGY6SzRJVktVTU5HUktKQzBYR1JBUUc3U09aMkcyWjFTNTlLUU9YRk9RQ0dOR05SRElTSTFRVFlEWUVYSDNTS0hNUw==","email":"mginka@bankmuscat.com"},"quay.io":{"auth":"b3BlbnNoaWZ0LXJlbGVhc2UtZGV2K29jbV9hY2Nlc3NfYWQ4OWM2OGY0ZGY1NDM4ZWE0YjIxMWMyODQyYjk5ZGY6SzRJVktVTU5HUktKQzBYR1JBUUc3U09aMkcyWjFTNTlLUU9YRk9RQ0dOR05SRElTSTFRVFlEWUVYSDNTS0hNUw==","email":"mginka@bankmuscat.com"},"registry.connect.redhat.com":{"auth":"fHVoYy1wb29sLTgxMzcyYWI4LTQ4YzMtNGM4NS1hYzRkLWVlYThmOTdmMDYzYjpleUpoYkdjaU9pSlNVelV4TWlKOS5leUp6ZFdJaU9pSm1aVEF4TVdaak9EZ3labU0wT1dSak9UZ3dObVJsTURSbFlXWmpPRFl3TnlKOS5VaDh2UlhKRGZWTHBaeWM4ZWdlZHdwTVhsTGRXUEQ3bEMwbjBramMxTjMtQXJkZXJMZVlvcE51N1pETlpPT2lXdEUxeDJpLXJCalZVWElfb1NDdS0xc183THZtdUdhbGdHU1V4OEJuSXZmNEZvMTFUamV6bTczNkJKSTZuV0JBTHJLU0NrblJ2bGNkQnE3ZmFldUVXcDhNOElWRk9mdmNQYk1KbzNyd0VvcmJzbUZzeC01UEFlc0tXWHZfMFE1S1NvVE1aRlRFSmxNTmctVVJ4clY0ZTlJcjZGbFdMTVlzclphMlVmd3c5T0t4MFdWbUpOZ3NMMzVnVWNoc0YwY3FQd1hXQk94czcyN0l3dmlpNXdRUVF5RG54NWlsV1BEX0pUcng1UWFaZWlTVVJ4c1ZSYkk2VVVRYnYxNlpjR19mM3V1cU5TdjdIbnRxNkNONGxVMEFHT20ya0xxZWhsb0Jfb3BqeXctdDJVZngxdE5xeFNYZm9iR3VURG9qRE9wR0pGNFNRZVRZTzBSbnZpenBPWllqbXBpYk5zZnVFekU5amQwR181NTM0LS1TTlh4LWtKUXRZRnVnZV9ucFliOE56WndDV05YWGtLRGNtZ3ZCZW1PR3U5SVo0WXFiVVk4bmxNTlZDMFJjR1gzT28ydUlvUUo0Tm5TNHA5Z1RuT3ZTRFctWEVkOVZRVlRubUpzdzc2My0tMzlGOVhvQXhlS0NTNC1yYk1WcGJKOFVZQU1FSElkUXo1TXRPMTR5TFQ0a0E4NXhrd19XUmF0ZGhhMmNJX1Zuc3otZlFCNWoyd3lQRXJoYTlDRFlwaUNFNnRsMFN5SXJ4SURqTjZKRlJ0dTNvQ0I4M0o2eHc5TUoxRnk3MnVwVDY0dURlWVpicklyZGM4ZlE4UzBLcl84dw==","email":"mginka@bankmuscat.com"},"registry.redhat.io":{"auth":"fHVoYy1wb29sLTgxMzcyYWI4LTQ4YzMtNGM4NS1hYzRkLWVlYThmOTdmMDYzYjpleUpoYkdjaU9pSlNVelV4TWlKOS5leUp6ZFdJaU9pSm1aVEF4TVdaak9EZ3labU0wT1dSak9UZ3dObVJsTURSbFlXWmpPRFl3TnlKOS5VaDh2UlhKRGZWTHBaeWM4ZWdlZHdwTVhsTGRXUEQ3bEMwbjBramMxTjMtQXJkZXJMZVlvcE51N1pETlpPT2lXdEUxeDJpLXJCalZVWElfb1NDdS0xc183THZtdUdhbGdHU1V4OEJuSXZmNEZvMTFUamV6bTczNkJKSTZuV0JBTHJLU0NrblJ2bGNkQnE3ZmFldUVXcDhNOElWRk9mdmNQYk1KbzNyd0VvcmJzbUZzeC01UEFlc0tXWHZfMFE1S1NvVE1aRlRFSmxNTmctVVJ4clY0ZTlJcjZGbFdMTVlzclphMlVmd3c5T0t4MFdWbUpOZ3NMMzVnVWNoc0YwY3FQd1hXQk94czcyN0l3dmlpNXdRUVF5RG54NWlsV1BEX0pUcng1UWFaZWlTVVJ4c1ZSYkk2VVVRYnYxNlpjR19mM3V1cU5TdjdIbnRxNkNONGxVMEFHT20ya0xxZWhsb0Jfb3BqeXctdDJVZngxdE5xeFNYZm9iR3VURG9qRE9wR0pGNFNRZVRZTzBSbnZpenBPWllqbXBpYk5zZnVFekU5amQwR181NTM0LS1TTlh4LWtKUXRZRnVnZV9ucFliOE56WndDV05YWGtLRGNtZ3ZCZW1PR3U5SVo0WXFiVVk4bmxNTlZDMFJjR1gzT28ydUlvUUo0Tm5TNHA5Z1RuT3ZTRFctWEVkOVZRVlRubUpzdzc2My0tMzlGOVhvQXhlS0NTNC1yYk1WcGJKOFVZQU1FSElkUXo1TXRPMTR5TFQ0a0E4NXhrd19XUmF0ZGhhMmNJX1Zuc3otZlFCNWoyd3lQRXJoYTlDRFlwaUNFNnRsMFN5SXJ4SURqTjZKRlJ0dTNvQ0I4M0o2eHc5TUoxRnk3MnVwVDY0dURlWVpicklyZGM4ZlE4UzBLcl84dw==","email":"mginka@bankmuscat.com"}}}'
+sshKey: |
+  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDpvJl8A2RPcJQlp4IZJsfs76RPTmUUsZU+s+1IBO0C3lx59Y9KYWOWc0zdWbDmJfqVS69XYPziFxfZKXYZv9msZTB+8YGsDDo0oWe7NJuBGOV3y8RH6IbhLYVT6OcK7uO0uRi8QSiaGAhM1CBIZaRMrOc/rhAp+NdN8he1oA65qmqJBy2KpNLgBJ4GMpqAn5y+VtekUydSbZY0AwCAasOuX4MhO61RfhwkBfThsOx+k54faAtubXpiMVWfAu3uiOS5EE+T74Drgfc+FwyuVoLcuf7g7zjY33z8bunmhRXZMIyFbdxWI1nUkRBsYz+1rLCxAtBh2efdhH4wxcIQFa2aJciWBDIN5WEMR91jhGNs7DtfAZ/FoEujibx5KKd/4365G53CCFpYT6eVSAfQ4P4kAMG2DGMyVQmpBx8vOnaEuFrzgxaH5gYzt7YDsmrD4d3qYalfD4j3YEsfWV0534XLl8SAiGUJEZM0Y6xEaaob4tJk5PQ0IBC7AQxs3p677HE= root@bastion.dct-ocp-01.testad.com
