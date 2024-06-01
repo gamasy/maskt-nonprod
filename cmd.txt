@@ -1,18 +1,1 @@
-oc patch networks.operator.openshift.io cluster --type=merge \
-  -p '{
-    "spec":{
-      "defaultNetwork":{
-        "ovnKubernetesConfig":{
-          "hybridOverlayConfig":{
-            "hybridClusterNetwork":[
-              {
-                "cidr": "<cidr>",
-                "hostPrefix": <prefix>
-              }
-            ],
-            "hybridOverlayVXLANPort": <overlay_port>
-          }
-        }
-      }
-    }
-  }'
+oc get machineset -n openshift-machine-api -o yaml $(oc get machineset -n openshift-machine-api | grep worker | cut -d' ' -f 1)
