@@ -1,0 +1,111 @@
+apiVersion: v1
+items:
+- apiVersion: config.openshift.io/v1
+  kind: ClusterVersion
+  metadata:
+    creationTimestamp: "2024-05-31T23:54:35Z"
+    generation: 2
+    name: version
+    resourceVersion: "163959"
+    uid: 085934d0-849e-4b8e-ba93-ae606735203a
+  spec:
+    channel: stable-4.15
+    clusterID: e8c6cd6f-7152-49d0-8955-5fa6c7883d3b
+  status:
+    availableUpdates:
+    - channels:
+      - candidate-4.15
+      - candidate-4.16
+      - fast-4.15
+      - stable-4.15
+      image: quay.io/openshift-release-dev/ocp-release@sha256:234ccdfa4adabcfa7490785bad7108a3c7d622f19cd5b8f4b241dfba96c09be0
+      url: https://access.redhat.com/errata/RHSA-2024:2865
+      version: 4.15.14
+    capabilities:
+      enabledCapabilities:
+      - Build
+      - CSISnapshot
+      - CloudCredential
+      - Console
+      - DeploymentConfig
+      - ImageRegistry
+      - Insights
+      - MachineAPI
+      - NodeTuning
+      - OperatorLifecycleManager
+      - Storage
+      - baremetal
+      - marketplace
+      - openshift-samples
+      knownCapabilities:
+      - Build
+      - CSISnapshot
+      - CloudCredential
+      - Console
+      - DeploymentConfig
+      - ImageRegistry
+      - Insights
+      - MachineAPI
+      - NodeTuning
+      - OperatorLifecycleManager
+      - Storage
+      - baremetal
+      - marketplace
+      - openshift-samples
+    conditions:
+    - lastTransitionTime: "2024-05-31T23:54:39Z"
+      message: Capabilities match configured spec
+      reason: AsExpected
+      status: "False"
+      type: ImplicitlyEnabledCapabilities
+    - lastTransitionTime: "2024-05-31T23:54:39Z"
+      message: Payload loaded version="4.15.13" image="quay.io/openshift-release-dev/ocp-release@sha256:e7e6e89eeaf682eb2f9987a900386e950e433fe909eff779c27216919c8d5f2e"
+        architecture="amd64"
+      reason: PayloadLoaded
+      status: "True"
+      type: ReleaseAccepted
+    - lastTransitionTime: "2024-05-31T23:54:39Z"
+      status: "False"
+      type: Available
+    - lastTransitionTime: "2024-06-01T07:51:31Z"
+      message: Cluster operators authentication, console, ingress, machine-api, monitoring
+        are not available
+      reason: ClusterOperatorsNotAvailable
+      status: "True"
+      type: Failing
+    - lastTransitionTime: "2024-05-31T23:54:39Z"
+      message: 'Unable to apply 4.15.13: some cluster operators are not available'
+      reason: ClusterOperatorsNotAvailable
+      status: "True"
+      type: Progressing
+    - lastTransitionTime: "2024-05-31T23:54:42Z"
+      status: "True"
+      type: RetrievedUpdates
+    - lastTransitionTime: "2024-06-01T00:12:38Z"
+      message: |-
+        Cluster operator console should not be upgraded between minor versions: ConsoleDefaultRouteSyncUpgradeable: no ingress for host console-openshift-console.apps.dct-ocp-01.testad.com in route console in namespace openshift-console
+        DownloadsDefaultRouteSyncUpgradeable: no ingress for host downloads-openshift-console.apps.dct-ocp-01.testad.com in route downloads in namespace openshift-console
+      reason: ConsoleDefaultRouteSync_FailedAdmitDefaultRoute::DownloadsDefaultRouteSync_FailedAdmitDefaultRoute
+      status: "False"
+      type: Upgradeable
+    desired:
+      channels:
+      - candidate-4.15
+      - candidate-4.16
+      - fast-4.15
+      - stable-4.15
+      image: quay.io/openshift-release-dev/ocp-release@sha256:e7e6e89eeaf682eb2f9987a900386e950e433fe909eff779c27216919c8d5f2e
+      url: https://access.redhat.com/errata/RHSA-2024:2773
+      version: 4.15.13
+    history:
+    - completionTime: null
+      image: quay.io/openshift-release-dev/ocp-release@sha256:e7e6e89eeaf682eb2f9987a900386e950e433fe909eff779c27216919c8d5f2e
+      startedTime: "2024-05-31T23:54:39Z"
+      state: Partial
+      verified: false
+      version: 4.15.13
+    observedGeneration: 2
+    versionHash: Fap--Gt3TB4=
+kind: List
+metadata:
+  resourceVersion: ""
