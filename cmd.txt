@@ -1,0 +1,18 @@
+oc patch networks.operator.openshift.io cluster --type=merge \
+  -p '{
+    "spec":{
+      "defaultNetwork":{
+        "ovnKubernetesConfig":{
+          "hybridOverlayConfig":{
+            "hybridClusterNetwork":[
+              {
+                "cidr": "<cidr>",
+                "hostPrefix": <prefix>
+              }
+            ],
+            "hybridOverlayVXLANPort": <overlay_port>
+          }
+        }
+      }
+    }
+  }'
