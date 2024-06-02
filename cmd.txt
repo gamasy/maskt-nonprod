@@ -6,3 +6,15 @@ curl https://mirror.openshift.com/pub/openshift-v4/clients/butane/latest/butane 
 
 oc patch OperatorHub cluster --type json \
     -p '[{"op": "add", "path": "/spec/disableAllDefaultSources", "value": true}]'
+
+
+oc adm taint node <infra-node-1> <infra-node-2> <infra-node-3> <infra-node-4> node-role.kubernetes.io/infra:NoSchedule
+
+oc label node <infra-node-1> router=true
+
+oc patch ingresscontroller/default --type=merge -n openshift-ingress-operator -p '{"spec": {"nodePlacement":{"nodeSelector":{"matchLabels":{"router": "true"}},"tolerations": [{"effect":"NoSchedule","key": "infra","value": "reserved"}]}}}'
+
+
+
+
+
