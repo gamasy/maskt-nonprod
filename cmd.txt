@@ -1,3 +1,5 @@
 oc get machineset -n openshift-machine-api -o yaml $(oc get machineset -n openshift-machine-api | grep worker | cut -d' ' -f 1)
 
 node-role.kubernetes.io/storage=
+
+curl https://mirror.openshift.com/pub/openshift-v4/clients/butane/latest/butane --output butane
