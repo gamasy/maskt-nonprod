@@ -3,3 +3,6 @@ oc get machineset -n openshift-machine-api -o yaml $(oc get machineset -n opensh
 node-role.kubernetes.io/storage=
 
 curl https://mirror.openshift.com/pub/openshift-v4/clients/butane/latest/butane --output butane
+
+oc patch OperatorHub cluster --type json \
+    -p '[{"op": "add", "path": "/spec/disableAllDefaultSources", "value": true}]'
