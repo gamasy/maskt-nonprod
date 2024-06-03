@@ -18,3 +18,4 @@ oc patch ingresscontroller/default --type=merge -n openshift-ingress-operator -p
 
 
 
+curl -s -o /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-isv https://www.redhat.com/security/data/55A34A82.txt
