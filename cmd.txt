@@ -19,3 +19,21 @@ oc patch ingresscontroller/default --type=merge -n openshift-ingress-operator -p
 
 
 curl -s -o /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-isv https://www.redhat.com/security/data/55A34A82.txt
+
+
+TESTAD\Openshift-ldap
+
+ 
+
+DN:        CN=Openshift-ldap,OU=User Accounts,DC=TESTAD,DC=COM
+
+ 
+
+Password: Muscat1212
+Active Directory
+
+172.16.2.112
+172.16.2.114
+
+LDAP :: 389
+LDAPS :: 636
