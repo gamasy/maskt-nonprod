@@ -1,0 +1,39 @@
+0: CN=Users,DC=TESTAD,DC=COM
+1: CN=Users,CN=Builtin,DC=TESTAD,DC=COM
+
+Which DN do you want to use? : 0
+[+]      Found 32 members:
+
+b'CN=Faisal Ahmed Khan,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Hamdan Jamal Salim Al Wahaibi (BPM & eApplications),OU=CBS Treasury & BO Payment Systems,OU=Business Solution & Application,OU=Information Technology,OU=IAM,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Nada,CN=Users,DC=TESTAD,DC=COM'
+b"CN=A'Seeb,OU=FIM Managed,OU=Groups,DC=TESTAD,DC=COM"
+b'CN=Iman Salim Said Al Mukhaini (Sur Al Afiah),OU=Sur Al Afiah,OU=South Sharqiya Region,OU=Interior Regions,OU=IAM,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Sameera Al Dughaishi,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Hiyam Abdul Rasool Khan Mohammed Al Balushi (Unit Head Mercha,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Nitin Sahu (Unit Head Business Projects - Cards),OU=Consumer Credit,OU=General Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Yasir Al Jamadi,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Kadar Mohaideen,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=LC4TMP8549,OU=Servers,DC=TESTAD,DC=COM'
+b'CN=adfssvc,OU=Service Accounts,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=test-shiva,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Tushar Bhavsar,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Jayant Kumar.,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Ibrahim Dawood Sulaiman Al Wahaibi (IT Network & Security),OU=Branch Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Abhi k kumar (Collateral Evaluation),OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Abeer Khalfan Khamis Al Hinai (Personal Banker - Br-Sultan Qa,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Irfan Pattan Khan,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Rijeesh Wahid,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=scomadmin2,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=InterbankDealers,CN=Users,DC=TESTAD,DC=COM'
+b'CN=moneymaarket-treasury,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=cfxdealers,CN=Users,DC=TESTAD,DC=COM'
+b'CN=sarath,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Karthikeyan Kannan (Card Services),OU=Card Services,OU=Service Excellence Centre,OU=Service Excellence Centre,OU=IAM,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Anil Duminda Ambawatte,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Taha Adnan  Omar Ba Hajaj (Business Intelligence Unit),CN=Users,DC=TESTAD,DC=COM'
+b'CN=Najeeb P,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Tahani Salim Rashid Ali Al Abri,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Mohamed Abith,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Abhishek Salgia (Manager Data Analytics - Retail Enterprises,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+

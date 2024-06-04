@@ -1,0 +1,115 @@
+apiVersion: operator.openshift.io/v1
+kind: IngressController
+metadata:
+  creationTimestamp: "2024-06-01T11:47:20Z"
+  finalizers:
+  - ingresscontroller.operator.openshift.io/finalizer-ingresscontroller
+  generation: 1
+  name: default
+  namespace: openshift-ingress-operator
+  resourceVersion: "454886"
+  uid: e577f6f4-58dc-4faa-9a7d-dbb752e2e814
+spec:
+  clientTLS:
+    clientCA:
+      name: ""
+    clientCertificatePolicy: ""
+  httpCompression: {}
+  httpEmptyRequestsPolicy: Respond
+  httpErrorCodePages:
+    name: ""
+  replicas: 2
+  tuningOptions:
+    reloadInterval: 0s
+  unsupportedConfigOverrides: null
+status:
+  availableReplicas: 2
+  conditions:
+  - lastTransitionTime: "2024-06-01T11:47:20Z"
+    reason: Valid
+    status: "True"
+    type: Admitted
+  - lastTransitionTime: "2024-06-01T12:13:39Z"
+    message: The deployment has Available status condition set to True
+    reason: DeploymentAvailable
+    status: "True"
+    type: DeploymentAvailable
+  - lastTransitionTime: "2024-06-01T12:13:39Z"
+    message: Minimum replicas requirement is met
+    reason: DeploymentMinimumReplicasMet
+    status: "True"
+    type: DeploymentReplicasMinAvailable
+  - lastTransitionTime: "2024-06-02T07:44:29Z"
+    message: All replicas are available
+    reason: DeploymentReplicasAvailable
+    status: "True"
+    type: DeploymentReplicasAllAvailable
+  - lastTransitionTime: "2024-06-02T07:44:29Z"
+    message: Deployment is not actively rolling out
+    reason: DeploymentNotRollingOut
+    status: "False"
+    type: DeploymentRollingOut
+  - lastTransitionTime: "2024-06-01T11:47:21Z"
+    message: The configured endpoint publishing strategy does not include a managed
+      load balancer
+    reason: EndpointPublishingStrategyExcludesManagedLoadBalancer
+    status: "False"
+    type: LoadBalancerManaged
+  - lastTransitionTime: "2024-06-01T11:47:21Z"
+    message: LoadBalancer is not progressing
+    reason: LoadBalancerNotProgressing
+    status: "False"
+    type: LoadBalancerProgressing
+  - lastTransitionTime: "2024-06-01T11:47:21Z"
+    message: No DNS zones are defined in the cluster dns config.
+    reason: NoDNSZones
+    status: "False"
+    type: DNSManaged
+  - lastTransitionTime: "2024-06-01T12:13:39Z"
+    status: "True"
+    type: Available
+  - lastTransitionTime: "2024-06-02T07:44:29Z"
+    status: "False"
+    type: Progressing
+  - lastTransitionTime: "2024-06-01T12:13:39Z"
+    status: "False"
+    type: Degraded
+  - lastTransitionTime: "2024-06-01T11:47:21Z"
+    message: IngressController is upgradeable.
+    reason: Upgradeable
+    status: "True"
+    type: Upgradeable
+  - lastTransitionTime: "2024-06-01T11:47:21Z"
+    message: No evaluation condition is detected.
+    reason: NoEvaluationCondition
+    status: "False"
+    type: EvaluationConditionsDetected
+  - lastTransitionTime: "2024-06-01T12:13:38Z"
+    message: Canary route checks for the default ingress controller are successful
+    reason: CanaryChecksSucceeding
+    status: "True"
+    type: CanaryChecksSucceeding
+  domain: apps.dct-ocp-01.testad.com
+  endpointPublishingStrategy:
+    hostNetwork:
+      httpPort: 80
+      httpsPort: 443
+      protocol: TCP
+      statsPort: 1936
+    type: HostNetwork
+  observedGeneration: 1
+  selector: ingresscontroller.operator.openshift.io/deployment-ingresscontroller=default
+  tlsProfile:
+    ciphers:
+    - ECDHE-ECDSA-AES128-GCM-SHA256
+    - ECDHE-RSA-AES128-GCM-SHA256
+    - ECDHE-ECDSA-AES256-GCM-SHA384
+    - ECDHE-RSA-AES256-GCM-SHA384
+    - ECDHE-ECDSA-CHACHA20-POLY1305
+    - ECDHE-RSA-CHACHA20-POLY1305
+    - DHE-RSA-AES128-GCM-SHA256
+    - DHE-RSA-AES256-GCM-SHA384
+    - TLS_AES_128_GCM_SHA256
+    - TLS_AES_256_GCM_SHA384
+    - TLS_CHACHA20_POLY1305_SHA256
+    minTLSVersion: VersionTLS12
