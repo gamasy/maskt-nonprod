@@ -36,4 +36,131 @@ b'CN=Najeeb P,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
 b'CN=Tahani Salim Rashid Ali Al Abri,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
 b'CN=Mohamed Abith,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
 b'CN=Abhishek Salgia (Manager Data Analytics - Retail Enterprises,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+##############################################################################
+
+[+] No DC IP provided. Will try to discover via DNS lookup.
+[+] Using Domain Controller at: 172.16.2.112
+[+] Getting defaultNamingContext from Root DSE
+[+]     Found: DC=TESTAD,DC=COM
+[+] Attempting bind
+[+]     ...success! Binded as:
+[+]      u:TESTAD\Openshift-ldap
+[+] Attempting to enumerate full DN for group: groups
+[+] Found 2 results:
+
+0: OU=Groups,DC=TESTAD,DC=COM
+1: OU=GroupsOU,OU=OCP01,OU=OpenShift,DC=TESTAD,DC=COM
+
+Which DN do you want to use? : 0
+[+]      Found 91 members:
+
+b'CN=Sheikh Asgher Ali,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Yaarub Mohamed Al Hammadi,OU=General Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Arif Issa Moosa Al Bulushi,OU=General Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Naanak R Pradheep,OU=General Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Anand Kumar Yadav TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Kafayat Mohammed Wali Al Balushi,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Ajay Kotkar,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Abdul Ghafoor Al Balushi,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Manjunath Tigadi,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Muhammad Asif Khan,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=MAE0008441,CN=Users,DC=TESTAD,DC=COM'
+b'CN=Gowtham A,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Sneha Panigrahi,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Majid Mohammed Redha Ahmed Al Lawati (Card Services),OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Faiza,OU=GST,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Externalpt,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Abdul Hameed Abdul Majeed Ibrahim Al Balushi,CN=Users,DC=TESTAD,DC=COM'
+b'CN=Abdul Rahman Mahfoodh Abdul Rahman Al Bulushi (Card Services),OU=Card Services,OU=Service Excellence Centre,OU=Service Excellence Centre,OU=IAM,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Lina Mohamed Abu Bakar Al Ghassani (Compliance),OU=Compliance,OU=IAM,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Khalid Moosa Al Bulushi,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Insharah Masoud Ali Al Khalasi,OU=General Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Mudassar nazar,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Adnan Al Hajri,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=merchantweb,OU=Service Accounts,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Hana Hashil Salim Al Khudhuri (Merchant Acquisition),OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Mundhir Muhanna Said Al Nadabi (Card Services),OU=Card Services,OU=General Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Mansoor Khan (IT),OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Muna Rashid Sabeeh Al Harthy (Group Leader Asalah Contact Cen,OU=Call Center,OU=General Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Hansel Gresham Barboza (Head of Cards Acquiring - Cards Acqui,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Asma Khalid Ibrahim Al Balushi (Officer - Card Services),OU=Card Services,OU=General Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Muna Rashid Ajib Al Balushi (Officer - Accounting & MIS - Car,OU=Card Services,OU=General Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=SAE0009263,OU=Branch Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Jithesh Keloth (Enterprise IT Infrastructure,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=testmvmva,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Rijeesh Wahid,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Fatima Salah Salim Al Najjar (IT Network & Security),OU=Branch Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=TestFSVAadmin,OU=Service Accounts,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Shaikh,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Harjit  Gill,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Yasser Salim Humaid Al Shuaili (Inbound Operations),OU=Test-Accounts,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Robert Leo Jesuraj TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=SATHISHKUMAR PADMANATHAN TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Viswanath Koushik TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Simanchala Mishra TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Sakthikumar Rajamani TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Abhilash Mavelil TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=SAE0009263,OU=Branch Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Joel Mathew Kavirajan TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Nandhini Gopi TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=GUNNA VENKATA SATYA VIKRAM KUMAR GURAJAPU TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=DHARAMJEET KUMAR TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=MALLIKARJUNAIAH JAYANNA SERVEGAR TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Jithesh Keloth (Enterprise IT Infrastructure,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Senthilprabu S. Subbiah TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Vamshidhar C. Cholleti TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Viswanath G. Ganesan TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Rajasekar Sundaram TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Roseline R. Biswal TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=THANGAMEENAKSHI HARIHARAN TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Satyajit Roy TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Rafeeq Ahmed Azeez TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Shanmugapriyan Murugesan TCS,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Anand Gautam,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Kadar Mohaideen,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Rajendra Sakhare,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Vijaykanth Tiruvayur,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Vikas Agrawala,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Anuj Srivastava,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Sudish Yadav,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Syed Rahimudeen,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Ayat Mohsin Moosa Aal Faqir (Internet Banking),OU=GST,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Narendran Pandian,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Muhammad Talha Ekram,OU=Vendors and Corporate Customers,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Marwan Ali Hamdan Al Kharusi (ATM Install Asst. Manager - Mob,OU=GST,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Kumar,OU=Compliance,OU=IAM,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Ruba Ali Said Al Subhi (Internet Banking),OU=Internet Banking,OU=eBanking,OU=Personal Banking,OU=IAM,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Rijeesh Wahid,OU=IT Staff,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Fatima Salah Salim Al Najjar (IT Network & Security),OU=Branch Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Ayat Mohsin Moosa Aal Faqir (Internet Banking),OU=Internet Banking,OU=eBanking,OU=Personal Banking,OU=IAM,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Tariq Amur Khalfan Al Busaidi (Bausher),OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Amal Taha Majid Al Musawi (Mobile & eBanking),OU=Test-Accounts,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Ali Hassan Hamed Al Ajmi,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Hanan Hamood Hamed Al Harthy,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Laila Said Rashid Al. Hakmani,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Mohammed Ashoor Faraj Majzah (Officer MIS - Mobile & eBanking,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Miaad Abdullah Mohammed Al Obaidani (Officer Internet Banking,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Madhan Thangaraj (Islamic Banking Finance),OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Sharifa Abdul Rahman Harith Al Busaidi (Business Demand Manag,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Ali Abdullah Salim Al Harthi (Virtualization Branch Infra. & Dig,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Mahmood Rashid Al Hinai(IT),OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+b'CN=Faiza Ahmed Kahoor Al Raisi (Officer - Information Technology,OU=Resigned and Disabled Users,OU=User Accounts,DC=TESTAD,DC=COM'
+
+[*] Bye!
+ocp-deployment root(NonProd:openshift-ingress) $ ./gamasy.py -d 172.16.2.112  -u Openshift-ldap@testad.com -p 'Muscat1212' -m groups
+[+] No DC IP provided. Will try to discover via DNS lookup.
+[+] Using Domain Controller at: 172.16.2.112
+[+] Getting defaultNamingContext from Root DSE
+[+]     Found: DC=TESTAD,DC=COM
+[+] Attempting bind
+[+]     ...success! Binded as:
+[+]      u:TESTAD\Openshift-ldap
+[+] Attempting to enumerate full DN for group: groups
+[+] Found 2 results:
+
+0: OU=Groups,DC=TESTAD,DC=COM
+1: OU=GroupsOU,OU=OCP01,OU=OpenShift,DC=TESTAD,DC=COM
+
+Which DN do you want to use? : 1
+[!] Found 0 results
 
