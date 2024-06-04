@@ -1,3 +1,20 @@
+
+
+Checking push permissions for bastion.dct-ocp-01.testad.com:8443
+Found: oc-mirror-workspace/src/publish
+Found: oc-mirror-workspace/src/v2
+Found: oc-mirror-workspace/src/charts
+Found: oc-mirror-workspace/src/release-signatures
+
+The rendered catalog is invalid.
+
+Run "oc-mirror list operators --catalog CATALOG-NAME --package PACKAGE-NAME" for more information.
+
+error: error rendering new refs: render reference "registry.redhat.io/redhat/certified-operator-index:v4.15": failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://cdn03.quay.io/quayio-production-s3/sha256/0f/0f143a925973554cd3d53167b29c2cb0a6b6a6f4dee77deed0736d4b6c048d6d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAI5LUAQGPZRPNKSJA%2F20240604%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240604T062824Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&X-Amz-Signature=bc3e18ccae5c70091400174204871f44d0c68b16ea7c0008bf793084ac3f20b9&cf_sign=cQ0EmkQiat1TRk1lOqMncI42LjrLHjazvkz218aYuikz%2Bb8E%2F3SpwDty2Znt4YPc76X0w%2BhAEb8uveQTFmkYzxakNw69UnSZ0OwjYnTpCuU34KTU%2FnXwpWEL4%2BHk2EzSBikVA%2FvFY3oZC%2BXTT59HrIzVa5Z1IInDEIYwLSOh14jONkh4f33gmuw4nxoTU%2FGL%2BtXz750gTVViOV8OQh38QSK8PEx%2FErsittdxtWKkziA%2FAfzWDLUmZbXnxhrCqcTCrHE5ztyGkcOw2eHMEcYkQZLklUXsGSSdKkHSB4Gsg9Z%2BMvEBRhiJIketWwnzpEiF44xyNJ63AyruTfp04xxvaQ%3D%3D&cf_expiry=1717483104&region=us-east-1&namespace=redhat&username=redhat%2Bregistry_proxy&repo_name=redhat----certified-operator-index": dial tcp 172.64.150.109:443: i/o timeout
+Command failed, retrying...
+Checking push permissions for bastion.dct-ocp-01.testad.com:8443
+
+#####################################################################
 0: CN=Users,DC=TESTAD,DC=COM
 1: CN=Users,CN=Builtin,DC=TESTAD,DC=COM
 
