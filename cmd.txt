@@ -1,3 +1,7 @@
+
+oc get openshiftapiserver -o=jsonpath='{range .items[0].status.conditions[?(@.type=="Encrypted")]}{.reason}{"\n"}{.message}{"\n"}'
+
+
 https://mirror2.openshift.com/pub/openshift-v4/x86_64/clients/ocp/candidate-4.16/oc-mirror.tar.gz
 for i in  odf-operator ocs-operator mcg-operator  odf-csi-addons-operator odr-cluster-operator odr-hub-operator advanced-cluster-management multicluster-engine rhacs-operator loki-operator cluster-logging compliance-operator metallb-operator penshift-gitops-operator cincinnati-operator edhat-oadp-operator  ; do oc-mirror list operators --catalog=registry.redhat.io/redhat/redhat-operator-index:v4.15 --package=$i; done
 
