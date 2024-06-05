@@ -1,4 +1,4 @@
-
+oc get route -n openshift-storage s3 -o jsonpath={.spec.host}
 oc get openshiftapiserver -o=jsonpath='{range .items[0].status.conditions[?(@.type=="Encrypted")]}{.reason}{"\n"}{.message}{"\n"}'
 
 
