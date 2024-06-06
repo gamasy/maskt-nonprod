@@ -1,5 +1,13 @@
 
 
+
+
+
+
+46s         Warning   FailedCreate           replicaset/bankpay-v1-bp-bmct-backend-58fb8b7644       Error creating: pods "bankpay-v1-bp-bmct-backend-58fb8b7644-" is forbidden: unable to validate against any security context constraint: [provider "anyuid": Forbidden: not usable by user or serviceaccount, provider restricted-v2: .containers[0].runAsUser: Invalid value: 0: must be in the ranges: [1000750000, 1000759999], provider "restricted": Forbidden: not usable by user or serviceaccount, provider "nonroot-v2": Forbidden: not usable by user or serviceaccount, provider "nonroot": Forbidden: not usable by user or serviceaccount, provider "noobaa-db": Forbidden: not usable by user or serviceaccount, provider "noobaa-endpoint": Forbidden: not usable by user or serviceaccount, provider "hostmount-anyuid": Forbidden: not usable by user or serviceaccount, provider "logging-scc": Forbidden: not usable by user or serviceaccount, provider "machine-api-termination-handler": Forbidden: not usable by user or serviceaccount, provider "hostnetwork-v2": Forbidden: not usable by user or serviceaccount, provider "hostnetwork": Forbidden: not usable by user or serviceaccount, provider "hostaccess": Forbidden: not usable by user or serviceaccount, provider "rook-ceph": Forbidden: not usable by user or serviceaccount, provider "node-exporter": Forbidden: not usable by user or serviceaccount, provider "rook-ceph-csi": Forbidden: not usable by user or serviceaccount, provider "privileged": Forbidden: not usable by user or serviceaccount]
+
+
+
 for i in  odf-operator ocs-operator mcg-operator  odf-csi-addons-operator odr-cluster-operator odr-hub-operator advanced-cluster-management multicluster-engine rhacs-operator loki-operator cluster-logging compliance-operator metallb-operator openshift-gitops-operator cincinnati-operator edhat-oadp-operator  ; do oc-mirror list operators --catalog=registry.redhat.io/redhat/redhat-operator-index:v4.15 --package=$i; done
 
 
