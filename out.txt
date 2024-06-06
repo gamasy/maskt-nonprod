@@ -1,3 +1,41 @@
+git clone  https://github.com/kubernetes-incubator/metrics-server.git
+
+wget -c https://gist.githubusercontent.com/initcron/1a2bd25353e1faa22a0ad41ad1c01b62/raw/008e23f9fbf4d7e2cf79df1dd008de2f1db62a10/k8s-metrics-server.patch.yaml
+
+oc patch deploy metrics-server -p "$(cat k8s-metrics-server.patch.yaml)" -n kube-system
+
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: vote
+spec:
+  minReplicas: 4
+  maxReplicas: 15
+  targetCPUUtilizationPercentage: 40
+  scaleTargetRef:
+    apiVersion: apps.openshift.io/v1
+    kind: DeploymentConfig
+    name: vote
+
+
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: loadtest
+spec:
+  template:
+    spec:
+      containers:
+      - name: siege
+        image: schoolofdevops/loadtest:v1
+        command: ["siege",  "--concurrent=5", "--benchmark", "--time=10m", "http://vote"]
+      restartPolicy: Never
+  backoffLimit: 4
+
+
+
+
+
 
 # oc patch configs.imageregistry.operator.openshift.io/cluster --patch '{"spec":{"defaultRoute":true}}' --type=merge
 
