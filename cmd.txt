@@ -1,3 +1,10 @@
+
+oc new-app --template=openshift/nginx-example --name=my-nginx-example --param=NAME=my-nginx-example
+
+
+
+
+
 oc login https://api.dct-ocp-01.testad.com:6443 -u ocp_admin
 
 
