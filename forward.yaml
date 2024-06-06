@@ -12,7 +12,7 @@ spec:
       rfc: RFC5424
       severity: debug
     type: syslog
-    url: udp://10.175.40.218:514
+    url: udp://172.20.228.30:514
   pipelines:
   - inputRefs:
     - audit
