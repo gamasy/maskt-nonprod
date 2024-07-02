@@ -1,0 +1,13 @@
+apiVersion: mirror.openshift.io/v1alpha2
+kind: ImageSetConfiguration
+#archiveSize: 2
+storageConfig:
+  registry:
+    imageURL: bastion.dct-ocp-01.testad.com:8443/openshift
+    skipTLS: false
+mirror:
+  platform:
+    channels:
+      - name: stable-4.15
+        minVersion: 4.15.13
+    graph: true
